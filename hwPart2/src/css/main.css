@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.form-content {
+  height: 100vh;
+  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form-content_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  height: 500px;
+  width: 400px;
+}
+.form-content .change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.form-content .change_link {
+  padding-right: 20px;
+}
+.form-content .change_link a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+.form-content .input-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 15px;
+}
+.form-content .input-holder .input-text {
+  border: 2px solid #A58ACA;
+  background: none;
+  height: 40px;
+  width: 260px;
+  padding-left: 10px;
+  color: white;
+  font-size: 16px;
+}
+.form-content .input-holder .input-text:focus {
+  outline: none;
+  border: 2px solid #bcabd4;
+}
+.form-content .input-holder label {
+  font-size: 17px;
+  margin-bottom: 5px;
+  color: white;
+}
+.form-content .check-holder {
+  margin-bottom: 20px;
+}
+.form-content .check-holder .checkbox {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: -100vh;
+  left: -10vw;
+}
+.form-content .check-holder .checkbox:checked + label::before {
+  background-color: #23AE92;
+}
+.form-content .check-holder .checkbox:checked + label::after {
+  visibility: visible;
+  opacity: 1;
+}
+.form-content .check-holder label {
+  position: relative;
+  font-size: 17px;
+  color: white;
+  padding-left: 25px;
+}
+.form-content .check-holder label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  border: 1px solid #23AE92;
+  background: none;
+}
+.form-content .check-holder label::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.form-content .btn-holder .btn {
+  height: 40px;
+  width: 260px;
+  background-color: #23AE92;
+  border: none;
+  font-size: 18px;
+  color: white;
+}
+.form-content .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form-content .account .login-help {
+  padding: 25px 0;
+}
+.form-content .account .login-help a {
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  opacity: 0.4;
+  font-weight: 100;
+}

@@ -1,0 +1,148 @@
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cahee {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 150px;
+}
+.cahee__heading {
+  text-align: center;
+  padding-top: 60px;
+}
+.cahee__heading_title {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.cahee__heading_text-wrap {
+  font-size: 17px;
+  width: 350px;
+  margin: 0 auto;
+}
+.cahee__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 60px;
+}
+.cahee__content_form-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cahee__content_form-holder .cahee__form_input input {
+  height: 50px;
+  width: 500px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  background-color: rgba(0, 196, 196, 0.4);
+  -webkit-filter: blur(2);
+          filter: blur(2);
+  outline: none;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  color: white;
+  max-width: 100%;
+}
+.cahee__content_form-holder .cahee__form input::-webkit-input-placeholder {
+  color: white;
+}
+.cahee__content_form-holder .cahee__form textarea::-webkit-input-placeholder {
+  color: white;
+}
+.cahee__content_form-holder .cahee__form_input input:focus {
+  background-color: #00C4C4;
+  border-left: 3px solid #355B82;
+  font-weight: 700;
+}
+.cahee__content_form-holder .cahee__form_input textarea {
+  height: 250px;
+  width: 500px;
+  padding-left: 20px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  border: 0;
+  resize: none;
+  background-color: rgba(0, 196, 196, 0.4);
+  -webkit-filter: blur(2);
+          filter: blur(2);
+  outline: none;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  color: white;
+  font-weight: 500;
+  max-width: 100%;
+}
+.cahee__content_form-holder .cahee__form_input textarea:focus {
+  background-color: #00C4C4;
+  border-left: 3px solid #355B82;
+  font-weight: 700;
+}
+.cahee__content .cahee__contact-info_adress, .cahee__content .cahee__contact-info_email, .cahee__content .cahee__contact-info_phone {
+  padding: 5px 0;
+}
+.cahee__content .cahee__contact-info a {
+  text-decoration: none;
+  color: #262626;
+}
+.cahee__contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cahee__contact-info_adress, .cahee__contact-info_email, .cahee__contact-info_phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cahee__copyright {
+  background-color: #262626;
+  padding: 30px 0;
+}
+.cahee__copyright_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #AFAFAF;
+}
+.cahee__copyright_block .copyright__text-wrap_red {
+  color: red;
+}
